@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-email {
+    display: flex;
+    align-items: center;
+    gap: 0 2rem;
+}
+
+.menu-conteudo {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item a {
+    color: var(--cinza100);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.menu-email {
+    color: var(--cinza500);
+    font-size: 0.6rem;
+    font-weight: 500;    
+}
+
+@media (max-width:600px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu-conteudo {
+        padding: 2rem;
+    }
+    
+    .logo-email {
+        flex-direction: column;
+    }
+    
+    .menu-email {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+
+    --bg1: #0B0C12;
+    --contraste: #0ED7D7;
+    --cinza100: #E6EAF0;
+    --cinza400: #B2B8BF;
+    --cinza500: #989EA6;
+    --cinza700: #636973;
+    --cinza900: #363B47;
+    --cinza1000: #242833;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--bg1);
+}
+
+

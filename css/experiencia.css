@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.exp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.card {
+    box-sizing: border-box;
+    background-color: var(--cinza1000);
+    border: 1px solid var(--cinza900);
+    max-width: 560px;
+    grid-column: 2;
+    padding: 30px 40px;
+}
+
+.exp-texto{
+    color: #16181a;
+    line-height: 1;
+    word-break: break-all;
+    width: 4ch;
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card-conteudo-cargo-e-ano {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-conteudo-cargo {
+    color: var(--contraste);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.card-conteudo-ano {
+    color: var(--cinza400);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.card h2 {
+    max-width: 20ch;
+    margin-top: 1.25rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: var(--cinza100);
+}
+
+.card p {
+    max-width: 30ch;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-top: 1.25rem;
+    color: var(--cinza500);
+}
+
+.card-conteudo-tecnologia {
+    display: inline-block;
+    color: var(--contraste);
+    margin-top: 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.card-tecnologias {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--cinza900);
+    color: var(--cinza100);
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 600px) {
+    .exp {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: flex-start;
+    }
+    .card {
+        grid-column: initial;
+    }
+
+    .exp-texto {
+        display: none;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
